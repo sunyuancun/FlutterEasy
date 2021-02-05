@@ -20,3 +20,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+class AppInfoProvider extends InheritedWidget {
+  @override
+  bool updateShouldNotify(covariant InheritedWidget oldWidget) => true;
+}
