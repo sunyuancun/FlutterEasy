@@ -12,7 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
 
-  html: ^0.14.0+4
+  #检测工具:目前提供了日志、method channel信息、路由信息、网络抓包、帧率、设备与内存信息查看、控件信息查看功能.
+  dokit: ^0.2.12
 
 dev_dependencies:
   flutter_test:

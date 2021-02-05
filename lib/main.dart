@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_lib/flutter_lib.dart';
 import 'business/home_page.dart';
 import 'common/app_config.dart';
+import 'package:dokit/dokit.dart';
 
 void main() {
   AppConfig.init();
-  runApp(MyApp());
+  DoKit.runApp(app: DoKitApp(MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -21,7 +22,4 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class AppInfoProvider extends InheritedWidget {
-  @override
-  bool updateShouldNotify(covariant InheritedWidget oldWidget) => true;
-}
+

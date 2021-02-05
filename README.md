@@ -15,26 +15,11 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-网络框架
+1.flutter app 启动到显示
 
-UI Base类
-
-状态管理
-
-国际化
-
-屏幕适配
-
-主题适配
-
-
-
-动态化热更新方案
-MTFlutter
-
-组件化方案
-
-
+1.main() -> runApp(widget) -> WidgetsFlutterBinding.ensureInitialized()..attachRootWidget(app) ..scheduleWarmUpFrame();
+2.WidgetsFlutterBinding正是绑定widget 框架和Flutter engine的桥梁.
+3.Window正是Flutter Framework连接宿主操作系统的接口。
 
 
 
